@@ -1,0 +1,36 @@
+{
+    "pluginAlias": "RControl",
+    "pluginType": "accessory",
+    "singular": false,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "Name",
+                "type": "string",
+                "default": "Alarm",
+                "required": true
+            },
+            "username": {
+                "title": "Username",
+                "type": "string",
+                "required": true,
+                "description": "Username used when logging into RControl."
+            },
+            "password": {
+                "title": "Password",
+                "type": "string",
+                "required": true,
+                "description": "Password used when logging into RControl."
+            },
+            "pin": {
+                "title": "PIN Code",
+                "type": "string",
+                "required": true,
+                "description": "The PIN code used when remote arming from RControl."
+            }
+        }
+    },
+    "form": null,
+    "display": null
+}

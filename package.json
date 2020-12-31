@@ -1,0 +1,43 @@
+{
+  "name": "homebridge-rcontrol",
+  "version": "0.0.1",
+  "displayName": "Homebridge RControl",
+  "description": "🚨 RControl Alarm System Plugin for Homebridge",
+  "main": "dist/accessory.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "rimraf ./dist && tsc",
+    "prepublishOnly": "npm run build",
+    "postpublish": "npm run clean",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run build && npm link && nodemon"
+  },
+  "author": "Andrew Abosh",
+  "engines": {
+    "homebridge": ">=1.0.0"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge",
+    "rcontrol",
+    "alarm",
+    "security system"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aabosh/homebridge-rcontrol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aabosh/homebridge-rcontrol/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.16",
+    "@types/node-fetch": "^2.5.7",
+    "homebridge": "^1.1.7",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.3"
+  }
+}
