@@ -1,6 +1,6 @@
 {
   "name": "homebridge-rcontrol",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "displayName": "Homebridge RControl",
   "description": "🚨 RControl Alarm System Plugin for Homebridge",
   "main": "dist/accessory.js",
